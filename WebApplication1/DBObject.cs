@@ -33,8 +33,8 @@ namespace WebApplication1
                         LongDesc = "Продолжение удивительных приключений воришки енота и его банды. В новой игре героям предстоит востановить историю предков енота и путешествовать по различным временым эпохам - от дикого запада до каменого века, а также встретить предков енота Слая.",
                         Price = 1500,
                         Img = "/img/Sly4.jpg",
-                        IsFavourite = false,
-                        available = false,
+                        IsFavourite = true,
+                        available = true,
                         Category = Categories["PSVita"]
                     },
                     new Ticket
@@ -44,8 +44,8 @@ namespace WebApplication1
                         LongDesc = "Действие игры происходит в 1274 году, во время первого монгольского вторжения в Японию, когда остров Цусима был захвачен и разорён Монгольской империей. Главный герой, японский самурай по имени Дзин Сакай, в одиночку даёт бой превосходящим силам монголов, опираясь на старые самурайские традиции и необычные методы борьбы. ",
                         Price = 3000,
                         Img = "/img/GhostTsusima.jpg",
-                        IsFavourite = true,
-                        available = true,
+                        IsFavourite = false,
+                        available = false,
                         Category = Categories["PS4"]
                     });
             }
