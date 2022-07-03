@@ -1,4 +1,5 @@
-﻿<div class="header"><br/><br/><br/>
+﻿@model HomeViewModel
+<div class="header"><br/><br/><br/>
   <img src="~/img/psstore.png" alt="logo" />
   <h2>PlayStation Store</h2>
 </div>
@@ -20,12 +21,10 @@
 <h3>@ViewBag.currCategory</h3>
 <div class="row mt-5 mb-5">
     @{
-        foreach (Ticket ticket in Model.GetAllTicket)
+        foreach (Ticket ticket in Model.favCars)
         {
             @Html.Partial("AllGames", ticket)
         }
-
-
         //{
         //    <div class="col-lg-4">
         //    <img class="img-thumbnail" src="@ticket.Img" alt="@ticket.Name" />
@@ -37,3 +36,4 @@
         //}
     }
 </div>
+

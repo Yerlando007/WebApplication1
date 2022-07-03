@@ -12,6 +12,6 @@ namespace WebApplication1
 
         public DbSet<Ticket> Ticket { get; set; }
         public DbSet<Category> Category { get; set; }
-
+        public DbSet<ShopCartItem> ShopCartItem { get; set; }
     }
 }
