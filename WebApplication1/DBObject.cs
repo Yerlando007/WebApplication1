@@ -17,36 +17,36 @@ namespace WebApplication1
                 content.AddRange(
                     new Ticket
                     {
-                        Name = "Плохие парни",
-                        ShortDesc = "Про авантюристов",
-                        LongDesc = "Авантюристы начинают новую жизнь",
+                        Name = "Дурная репутация 2",
+                        ShortDesc = "Игра для PS3",
+                        LongDesc = "Продолжение удивительных приключений курьера Коула Макграта, который после несчастного случая стал человеком-аккумулятором. В сиквеле Коул готовится ко встрече со своим антиподом по прозвищу Зверь. Для этого он отправляется в город Нью-Маре, чтобы проконсультироваться с неким профессором Вольфом.",
                         Price = 1100,
-                        Img = "/img/badboys.jpg",
+                        Img = "/img/Infamous2.jpg",
                         IsFavourite = true,
                         available = true,
-                        Category = Categories["Мультфильмы"]
+                        Category = Categories["PS3"]
                     },
                     new Ticket
                     {
-                        Name = "Доктор Стрендж",
-                        ShortDesc = "Про мага",
-                        LongDesc = "Мага исправляет мультивселенную",
+                        Name = "Слай Купер: Прыжок во времени",
+                        ShortDesc = "Игра для PSVita",
+                        LongDesc = "Продолжение удивительных приключений воришки енота и его банды. В новой игре героям предстоит востановить историю предков енота и путешествовать по различным временым эпохам - от дикого запада до каменого века, а также встретить предков енота Слая.",
                         Price = 1500,
-                        Img = "/img/maga.jpg",
+                        Img = "/img/Sly4.jpg",
                         IsFavourite = false,
                         available = false,
-                        Category = Categories["Фильм"]
+                        Category = Categories["PSVita"]
                     },
                     new Ticket
                     {
-                        Name = "Затерянный город",
-                        ShortDesc = "Я хз, но там Ченнинг Таттум",
-                        LongDesc = "Точно не могу дать описание. Посмотри в гугле",
-                        Price = 900,
-                        Img = "/img/city.jpg",
+                        Name = "Призрак Цусимы",
+                        ShortDesc = "Игра для PS4",
+                        LongDesc = "Действие игры происходит в 1274 году, во время первого монгольского вторжения в Японию, когда остров Цусима был захвачен и разорён Монгольской империей. Главный герой, японский самурай по имени Дзин Сакай, в одиночку даёт бой превосходящим силам монголов, опираясь на старые самурайские традиции и необычные методы борьбы. ",
+                        Price = 3000,
+                        Img = "/img/GhostTsusima.jpg",
                         IsFavourite = true,
                         available = true,
-                        Category = Categories["Фильм"]
+                        Category = Categories["PS4"]
                     });
             }
             content.SaveChanges();        
@@ -60,8 +60,9 @@ namespace WebApplication1
                 {
                     var list = new Category[]
                     {
-                        new Category { CategoryName = "Мультфильмы", Desc = "Анимационные фильмы"},
-                        new Category { CategoryName = "Фильм", Desc = "Фильмы"}
+                        new Category { CategoryName = "PS3", Desc = "Консоль 7 поколения"},
+                        new Category { CategoryName = "PSVita", Desc = "Портативная консоль 8 поколения"},
+                        new Category { CategoryName = "PS4", Desc = "Консоль 8 поколения"}
                     };
 
                     category = new Dictionary<string, Category>();
