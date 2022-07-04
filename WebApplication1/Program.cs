@@ -14,6 +14,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<IAllTicket, TicketRepository>();
 builder.Services.AddTransient<ITicketCategory, CategoryRepository>();
+builder.Services.AddTransient<IAllOrders, OrdersRepository>();
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped(sp => ShopCart.GetCart(sp));
